@@ -1,0 +1,82 @@
+<project name="CG_ANT_TASKS_DEMO" default="test FileEditor" basedir="..">
+
+  <target name="test MultipleInput">
+    <taskdef name="minput" classpath="classes" classname="org.cgtools.anttasks.ant.MultipleInputTask"/>
+    <typedef name="inputline" classpath="classes" classname="org.cgtools.anttasks.ant.MultipleInputTask$InputLine"/>
+
+    <minput message="Enter the following values:" length="25">
+      <inputline label="Label A: " text="AAAAAAA" property="minput.a"/>
+      <inputline label="Label B: " property="minput.b"/>
+      <inputline label="" property="minput.c"/>
+      <inputline label="Label...........................D: " property="minput.d"/>
+    </minput>
+
+    <echo>Result: ${minput.a};${minput.b};${minput.c};${minput.d}</echo>
+  </target>
+
+  <target name="test FileEditor">
+    <taskdef name="editor" classpath="classes" classname="org.cgtools.anttasks.ant.FileEditorTask"/>
+    <property name="FILE_PATH" value="test/data/fileForEditor.txt"/>
+    <editor title="Edit: ${FILE_PATH}" message="You can modify your file" file="${FILE_PATH}" font="Arial"
+            fontSize="28"/>
+    <loadfile srcfile="${FILE_PATH}" property="FILE_CONTENT"/>
+    <echo>File content:
+      ---
+      ${FILE_CONTENT}
+      ---
+    </echo>
+  </target>
+
+  <target name="test FileChooser">
+    <taskdef name="fileChooser" classpath="classes" classname="org.cgtools.anttasks.ant.FileChooserTask"/>
+    <fileChooser title="Choose your file" path="tmp" suffix="traces" property="FILE_PATH"/>
+    <echo>CHOOSE: ${FILE_PATH}</echo>
+  </target>
+
+  <target name="test Grep">
+    <taskdef name="grep" classpath="classes" classname="org.cgtools.anttasks.ant.GrepTask"/>
+
+    <grep file="test/data/fileForGrep.txt" regexp=".*Version:.*" property="test.result"/>
+    <echo>RESULT: -=-${test.result}-=-</echo>
+
+    <grep file="test/data/fileForGrep.txt" regexp="Version: (.*)" property="test.result"/>
+    <echo>RESULT: ${test.result}</echo>
+    <echo>RESULT_1: ${test.result.1}</echo>
+
+    <grep file="test/data/fileForGrep.txt" regexp="(.+Version): (.*)" property="test.result"/>
+    <echo>RESULT: ${test.result}</echo>
+    <echo>RESULT_1: ${test.result.1}</echo>
+    <echo>RESULT_2: ${test.result.2}</echo>
+  </target>
+
+  <target name="test Replace (classic)">
+    <property name="INPUT" value="org.cgtools.anttasks.ant.ReplaceTask"/>
+    <echo file="test/tmpReplace.txt">${INPUT}</echo>
+    <replace file="test/tmpReplace.txt" token="." value="/"/>
+    <loadfile srcfile="test/tmpReplace.txt" property="RESULT"/>
+    <echo>RESULT is : ${RESULT}</echo>
+  </target>
+
+  <target name="test Replace">
+    <taskdef name="myreplace" classpath="classes" classname="org.cgtools.anttasks.ant.ReplaceTask"/>
+    <property name="test.input" value="org.cgtools.anttasks.ant.ReplaceTask"/>
+
+
+    <myreplace value="${test.input}" regexp="\." replacement="/" property="test.result"/>
+    <echo>
+      INPUT : ${test.input}
+      RESULT: ${test.result}
+    </echo>
+  </target>
+
+  <target name="test ListChooser">
+    <taskdef name="listChooser" classpath="classes" classname="org.cgtools.anttasks.ant.ListChooserTask"/>
+    <listChooser title="ListChooser" property="choose.result" launchgui="true"
+                 message="Choose in the list:"
+                 listing="aaa,bbb,ccc,eee,ddd,,"
+                 current="bbb"/>
+    <echo>CHOOSE: ${choose.result}</echo>
+  </target>
+
+</project>
+
