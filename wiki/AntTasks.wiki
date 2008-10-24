@@ -1,0 +1,67 @@
+#CG Ant Tasks
+
+=Ant Tasks=
+
+==Overview==
+
+ * The GUI tasks:
+   * multiple input: allow to set several properties to input values in the same window
+   * file editor: very simple file editor
+   * file chooser: a basic swing file chooser
+   * list chooser: as input but using a comboBox
+
+ * The regexp tasks:
+   * grep: search a token in a file
+   * replace: replace a substring in a property
+
+==Install==
+
+ # Download the CGAntTasks.jar [http://cgtools.googlecode.com/files/CGAntTasks.jar here]
+ # Add it to your ANT additional classpath
+ # Add the XML namespace in your ANT project
+   {{{
+   <project name="MY_PROJECT" 
+            xmlns:cgtools="antlib:org.cgtools.anttasks.ant">
+   }}}
+ # Call the tasks as follow:
+   {{{
+   <cgtools:minput message="Enter the following values:" length="25">
+      <inputline label="Label A: " text="my_value_for_a" property="result.for.a"/>
+      <inputline label="Label B: " property="result.for.b"/>
+    </cgtools:minput>
+    <echo>${result.for.a} and ${result.for.b}</echo>
+   }}}
+
+==Usage==
+ 
+===minput==
+
+Set several properties to input values in the same window
+
+====Parameters====
+||Attributes||Description||Required||
+||title||Title of the window||no||
+||message||Message at the top of window||no||
+||length||Length of the input fields||no||
+
+====Parameters specified as nested elements====
+
+*inputline*
+
+||Attributes||Description||Required||
+||label||Label||no||
+||property||The name of a property to be created from input value||yes||
+||text||Default value||no||
+
+===fileEditor==
+
+A simple file editor
+
+====Parameters====
+
+||Attributes||Description||Required||
+||title||Title of the window||no||
+||message||Message at the top of window||no||
+||file||File path to edit||yes||
+||font||Editor font||no||
+||fontSize||Editor font size||no||
