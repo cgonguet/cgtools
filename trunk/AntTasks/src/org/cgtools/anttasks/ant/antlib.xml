@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<antlib>
+  <taskdef name="minput" classname="org.cgtools.anttasks.ant.MultipleInputTask"/>
+  <typedef name="inputline" classname="org.cgtools.anttasks.ant.MultipleInputTask$InputLine"/>
+  <taskdef name="editor" classname="org.cgtools.anttasks.ant.FileEditorTask"/>
+  <taskdef name="fileChooser" classname="org.cgtools.anttasks.ant.FileChooserTask"/>
+  <taskdef name="grep" classname="org.cgtools.anttasks.ant.GrepTask"/>
+  <taskdef name="replace" classname="org.cgtools.anttasks.ant.ReplaceTask"/>
+</antlib>
