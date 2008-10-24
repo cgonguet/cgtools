@@ -32,10 +32,10 @@
 
 ==Usage==
 
-* [MultipleInputTask muinput]
-* [FileEditorTask editor]
-* [FileChooserTask fileChooser]
-* [ListChooserTask listChooser]
-* [GrepTask grep]
-* [ReplaceTask replace]
+ * [MultipleInputTask muinput]
+ * [FileEditorTask editor]
+ * [FileChooserTask fileChooser]
+ * [ListChooserTask listChooser]
+ * [GrepTask grep]
+ * [ReplaceTask replace]
  
