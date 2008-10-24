@@ -2,12 +2,21 @@
 <project version="4" relativePaths="false">
   <component name="AntConfiguration">
     <defaultAnt bundledAnt="true" />
-    <buildFile url="file://$PROJECT_DIR$/dev/build.xml">
+    <buildFile url="file://$PROJECT_DIR$/dev/test_tasks.xml">
       <additionalClassPath>
         <entry path="file://$PROJECT_DIR$/classes" />
         <entry path="file://$PROJECT_DIR$/lib/commons-logging-1.1.1.jar" />
         <entry path="file://$PROJECT_DIR$/lib/commons-codec-1.3.jar" />
         <entry path="file://$PROJECT_DIR$/lib/commons-httpclient-3.0.jar" />
+      </additionalClassPath>
+      <antReference projectDefault="true" />
+      <customJdkName value="" />
+      <maximumHeapSize value="128" />
+      <properties />
+    </buildFile>
+    <buildFile url="file://$PROJECT_DIR$/dev/test_antlib.xml">
+      <additionalClassPath>
+        <entry path="file://$PROJECT_DIR$/CGAntTasks.jar" />
       </additionalClassPath>
       <antReference projectDefault="true" />
       <customJdkName value="" />
@@ -191,59 +200,59 @@
   </component>
   <component name="IntelliJadProjectConfigComponent">
     <config>
-      <clear type="boolean">false</clear>
-      <noclass type="boolean">false</noclass>
-      <d type="string" />
-      <nocode type="boolean">false</nocode>
-      <lradix type="integer">10</lradix>
-      <indentation type="integer">4</indentation>
-      <noinner type="boolean">false</noinner>
-      <noconv type="boolean">false</noconv>
-      <a type="boolean">false</a>
-      <exclusion-table-model type="table-model" model-class="net.stevechaloner.intellijad.config.ExclusionTableModel" content-types="string,boolean,boolean" />
-      <dead type="boolean">false</dead>
-      <pf type="string">_fld</pf>
-      <lnc type="boolean">false</lnc>
-      <s type="string">java</s>
-      <nocast type="boolean">false</nocast>
-      <pp type="string">_prm</pp>
-      <i type="boolean">false</i>
-      <ff type="boolean">false</ff>
-      <nl type="boolean">false</nl>
-      <pm type="string">_mth</pm>
-      <pa type="string" />
-      <safe type="boolean">false</safe>
-      <create-output-directory type="boolean">false</create-output-directory>
-      <pl type="string">_lcl</pl>
-      <pc type="string">_cls</pc>
-      <af type="boolean">false</af>
-      <always-exclude-recursively type="boolean">false</always-exclude-recursively>
-      <dis type="boolean">false</dis>
-      <pe type="string">_ex</pe>
-      <f type="boolean">false</f>
-      <noctor type="boolean">false</noctor>
-      <o type="boolean">false</o>
       <pv type="integer">3</pv>
-      <nonlb type="boolean">false</nonlb>
-      <jad-path type="string" />
-      <clear-and-close-console-on-success type="boolean">false</clear-and-close-console-on-success>
+      <nofd type="boolean">false</nofd>
+      <nocode type="boolean">false</nocode>
+      <lnc type="boolean">false</lnc>
+      <dis type="boolean">false</dis>
+      <ff type="boolean">false</ff>
+      <lradix type="integer">10</lradix>
       <v type="boolean">false</v>
-      <stat type="boolean">false</stat>
-      <b type="boolean">false</b>
+      <create-output-directory type="boolean">false</create-output-directory>
+      <nonlb type="boolean">false</nonlb>
+      <radix type="integer">10</radix>
+      <dead type="boolean">false</dead>
       <l type="integer">64</l>
-      <read-only type="boolean">false</read-only>
-      <sort type="boolean">false</sort>
+      <pc type="string">_cls</pc>
+      <clear-and-close-console-on-success type="boolean">false</clear-and-close-console-on-success>
+      <decompile-to-memory type="boolean">true</decompile-to-memory>
+      <r type="boolean">false</r>
+      <o type="boolean">false</o>
+      <pf type="string">_fld</pf>
+      <pe type="string">_ex</pe>
+      <d type="string" />
       <nolvt type="boolean">false</nolvt>
       <use-project-specific-settings type="boolean">false</use-project-specific-settings>
-      <decompile-to-memory type="boolean">true</decompile-to-memory>
-      <space type="boolean">false</space>
-      <t type="boolean">false</t>
-      <radix type="integer">10</radix>
+      <clear type="boolean">false</clear>
+      <always-exclude-recursively type="boolean">false</always-exclude-recursively>
+      <pl type="string">_lcl</pl>
+      <i type="boolean">false</i>
+      <nocast type="boolean">false</nocast>
       <reformat-according-to-style type="boolean">false</reformat-according-to-style>
+      <noinner type="boolean">false</noinner>
+      <indentation type="integer">4</indentation>
+      <noctor type="boolean">false</noctor>
+      <nl type="boolean">false</nl>
+      <af type="boolean">false</af>
+      <jad-path type="string" />
+      <space type="boolean">false</space>
+      <safe type="boolean">false</safe>
+      <pp type="string">_prm</pp>
+      <f type="boolean">false</f>
+      <pm type="string">_mth</pm>
+      <read-only type="boolean">false</read-only>
       <nodos type="boolean">false</nodos>
+      <stat type="boolean">false</stat>
+      <exclusion-table-model type="table-model" model-class="net.stevechaloner.intellijad.config.ExclusionTableModel" content-types="string,boolean,boolean" />
       <decompile-on-navigation type="string">Always</decompile-on-navigation>
-      <nofd type="boolean">false</nofd>
-      <r type="boolean">false</r>
+      <b type="boolean">false</b>
+      <sort type="boolean">false</sort>
+      <s type="string">java</s>
+      <t type="boolean">false</t>
+      <noconv type="boolean">false</noconv>
+      <a type="boolean">false</a>
+      <noclass type="boolean">false</noclass>
+      <pa type="string" />
     </config>
   </component>
   <component name="JavacSettings">
