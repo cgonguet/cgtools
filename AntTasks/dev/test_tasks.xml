@@ -1,39 +1,46 @@
-<project name="CG_ANT_TASKS_DEMO" default="test FileEditor" basedir="..">
+<project name="TEST_TASKS" default="1. test MultipleInput" basedir="..">
 
-  <target name="test MultipleInput">
+  <target name="1. test MultipleInput">
     <taskdef name="minput" classpath="classes" classname="org.cgtools.anttasks.ant.MultipleInputTask"/>
     <typedef name="inputline" classpath="classes" classname="org.cgtools.anttasks.ant.MultipleInputTask$InputLine"/>
 
     <minput message="Enter the following values:" length="25">
-      <inputline label="Label A: " text="AAAAAAA" property="minput.a"/>
-      <inputline label="Label B: " property="minput.b"/>
-      <inputline label="" property="minput.c"/>
-      <inputline label="Label...........................D: " property="minput.d"/>
+      <inputline label="Label A: " text="AAAAAAA" property="test.result.1"/>
+      <inputline label="Label B: " property="test.result.2"/>
+      <inputline label="" property="test.result.3"/>
+      <inputline label="Label...........................D: " property="test.result.4"/>
     </minput>
 
-    <echo>Result: ${minput.a};${minput.b};${minput.c};${minput.d}</echo>
+    <echo>
+      RESULT:
+      
+      ${test.result.1}
+      ${test.result.2}
+      ${test.result.3}
+      ${test.result.4}
+    </echo>
   </target>
 
-  <target name="test FileEditor">
+  <target name="2. test FileEditor">
     <taskdef name="editor" classpath="classes" classname="org.cgtools.anttasks.ant.FileEditorTask"/>
-    <property name="FILE_PATH" value="test/data/fileForEditor.txt"/>
-    <editor title="Edit: ${FILE_PATH}" message="You can modify your file" file="${FILE_PATH}" font="Arial"
+    <property name="test.file.path" value="test/data/fileForEditor.txt"/>
+    <editor title="Edit: ${test.file.path}" message="You can modify your file" file="${test.file.path}" font="Arial"
             fontSize="28"/>
-    <loadfile srcfile="${FILE_PATH}" property="FILE_CONTENT"/>
+    <loadfile srcfile="${test.file.path}" property="test.file.content"/>
     <echo>File content:
       ---
-      ${FILE_CONTENT}
+      ${test.file.content}
       ---
     </echo>
   </target>
 
-  <target name="test FileChooser">
+  <target name="3. test FileChooser">
     <taskdef name="fileChooser" classpath="classes" classname="org.cgtools.anttasks.ant.FileChooserTask"/>
-    <fileChooser title="Choose your file" path="tmp" suffix="traces" property="FILE_PATH"/>
-    <echo>CHOOSE: ${FILE_PATH}</echo>
+    <fileChooser title="Choose your file" path="tmp" suffix="traces" property="test.result"/>
+    <echo>CHOOSE: ${test.result}</echo>
   </target>
 
-  <target name="test Grep">
+  <target name="4. test Grep">
     <taskdef name="grep" classpath="classes" classname="org.cgtools.anttasks.ant.GrepTask"/>
 
     <grep file="test/data/fileForGrep.txt" regexp=".*Version:.*" property="test.result"/>
@@ -49,15 +56,7 @@
     <echo>RESULT_2: ${test.result.2}</echo>
   </target>
 
-  <target name="test Replace (classic)">
-    <property name="INPUT" value="org.cgtools.anttasks.ant.ReplaceTask"/>
-    <echo file="test/tmpReplace.txt">${INPUT}</echo>
-    <replace file="test/tmpReplace.txt" token="." value="/"/>
-    <loadfile srcfile="test/tmpReplace.txt" property="RESULT"/>
-    <echo>RESULT is : ${RESULT}</echo>
-  </target>
-
-  <target name="test Replace">
+  <target name="5. test Replace">
     <taskdef name="myreplace" classpath="classes" classname="org.cgtools.anttasks.ant.ReplaceTask"/>
     <property name="test.input" value="org.cgtools.anttasks.ant.ReplaceTask"/>
 
@@ -69,13 +68,13 @@
     </echo>
   </target>
 
-  <target name="test ListChooser">
+  <target name="6. test ListChooser">
     <taskdef name="listChooser" classpath="classes" classname="org.cgtools.anttasks.ant.ListChooserTask"/>
-    <listChooser title="ListChooser" property="choose.result" launchgui="true"
+    <listChooser title="ListChooser" property="test.result" launchgui="true"
                  message="Choose in the list:"
                  listing="aaa,bbb,ccc,eee,ddd,,"
                  current="bbb"/>
-    <echo>CHOOSE: ${choose.result}</echo>
+    <echo>RESULT: ${test.result}</echo>
   </target>
 
 </project>
