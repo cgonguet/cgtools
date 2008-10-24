@@ -1,4 +1,4 @@
-#summary One-sentence summary of this page.
+#summary minput documentation
 
 =minput=
 
@@ -9,6 +9,7 @@ Set several properties to input values in the same window
 ||title||Title of the window||no||
 ||message||Message at the top of window||no||
 ||length||Length of the input fields||no||
+
 
 ===Parameters specified as nested elements===
 
