@@ -6,11 +6,11 @@
    * [MultipleInputTask multiple input]: allow to set several properties to input values in the same window
    * [FileEditorTask file editor]: very simple file editor
    * [FileChooserTask file chooser]: a basic swing file chooser
-   * [ListchooserTask list chooser]: as input but using a comboBox
+   * [ListChooserTask list chooser]: as input but using a comboBox
 
  * The regexp tasks:
-   * grep: search a token in a file
-   * replace: replace a substring in a property
+   * [GrepTask grep]: search a token in a file
+   * [ReplaceTask replace]: replace a substring in a property
 
 ==Install==
 
@@ -33,4 +33,9 @@
 ==Usage==
 
 * [MultipleInputTask muinput]
+* [FileEditorTask editor]
+* [FileChooserTask fileChooser]
+* [ListChooserTask listChooser]
+* [GrepTask grep]
+* [ReplaceTask replace]
  
