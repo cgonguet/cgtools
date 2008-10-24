@@ -9,7 +9,7 @@
    * [ListChooserTask list chooser]: as input but using a comboBox
 
  * The regexp tasks:
-   * [GrepTask grep]: search a token in a file
+   * [GrepTask grep]: search in a file
    * [ReplaceTask replace]: replace a substring in a property
 
 ==Install==
