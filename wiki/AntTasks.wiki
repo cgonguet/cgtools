@@ -1,14 +1,12 @@
-#CG Ant Tasks
-
 =Ant Tasks=
 
 ==Overview==
 
  * The GUI tasks:
-   * multiple input: allow to set several properties to input values in the same window
-   * file editor: very simple file editor
-   * file chooser: a basic swing file chooser
-   * list chooser: as input but using a comboBox
+   * [MultipleInputTask multiple input]: allow to set several properties to input values in the same window
+   * [FileEditorTask file editor]: very simple file editor
+   * [FileChooserTask file chooser]: a basic swing file chooser
+   * [ListchooserTask list chooser]: as input but using a comboBox
 
  * The regexp tasks:
    * grep: search a token in a file
