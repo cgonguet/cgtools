@@ -1,7 +1,8 @@
 <?xml version="1.0"?>
 <antlib>
   <taskdef name="minput" classname="org.cgtools.anttasks.ant.MultipleInputTask"/>
-  <typedef name="inputline" classname="org.cgtools.anttasks.ant.MultipleInputTask$InputLine"/>
+  <typedef name="inputtext" classname="org.cgtools.anttasks.ant.MultipleInputTask$TextInputLine"/>
+  <typedef name="inputfile" classname="org.cgtools.anttasks.ant.MultipleInputTask$FileChooserInputLine"/>
   <taskdef name="editor" classname="org.cgtools.anttasks.ant.FileEditorTask"/>
   <taskdef name="fileChooser" classname="org.cgtools.anttasks.ant.FileChooserTask"/>
   <taskdef name="grep" classname="org.cgtools.anttasks.ant.GrepTask"/>
