@@ -2,13 +2,15 @@
 
   <target name="1. test MultipleInput">
     <taskdef name="minput" classpath="classes" classname="org.cgtools.anttasks.ant.MultipleInputTask"/>
-    <typedef name="inputline" classpath="classes" classname="org.cgtools.anttasks.ant.MultipleInputTask$InputLine"/>
+    <typedef name="inputtext" classpath="classes" classname="org.cgtools.anttasks.ant.MultipleInputTask$TextInputLine"/>
+    <typedef name="inputfile" classpath="classes" classname="org.cgtools.anttasks.ant.MultipleInputTask$FileChooserInputLine"/>
 
     <minput message="Enter the following values:" length="25">
-      <inputline label="Label A: " text="AAAAAAA" property="test.result.1"/>
-      <inputline label="Label B: " property="test.result.2"/>
-      <inputline label="" property="test.result.3"/>
-      <inputline label="Label...........................D: " property="test.result.4"/>
+      <inputtext label="Label A: " text="AAAAAAA" property="test.result.1"/>
+      <inputtext label="Label B: " property="test.result.2"/>
+      <inputtext label="" property="test.result.3"/>
+      <inputtext label="Label...........................D: " property="test.result.4"/>
+      <inputfile label="Choose file: " file="test/data/fileForEditor.txt" property="test.result.file"/>
     </minput>
 
     <echo>
@@ -18,6 +20,8 @@
       ${test.result.2}
       ${test.result.3}
       ${test.result.4}
+
+      ${test.result.file}
     </echo>
   </target>
 
@@ -51,9 +55,10 @@
     <echo>RESULT_1: ${test.result.1}</echo>
 
     <grep file="test/data/fileForGrep.txt" regexp="(.+Version): (.*)" property="test.result"/>
-    <echo>RESULT: ${test.result}</echo>
-    <echo>RESULT_1: ${test.result.1}</echo>
-    <echo>RESULT_2: ${test.result.2}</echo>
+    <echo>
+      GREP   : ${test.result}
+      VALUE 1: ${test.result.1}
+      VALUE 2: ${test.result.2}</echo>
   </target>
 
   <target name="5. test Replace">

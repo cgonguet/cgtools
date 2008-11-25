@@ -18,11 +18,11 @@
   <component name="ChangeListManager">
     <list default="true" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CGAntTasks.ipr" afterPath="$PROJECT_DIR$/CGAntTasks.ipr" />
-      <change type="DELETED" beforePath="D:\ALU_SVN\CGTools_google\AntTasks\dev\build.xml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev/test_tasks.xml" afterPath="$PROJECT_DIR$/dev/test_tasks.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/cgtools/anttasks/ant/MultipleInputTask.java" afterPath="$PROJECT_DIR$/src/org/cgtools/anttasks/ant/MultipleInputTask.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CGAntTasks.iws" afterPath="$PROJECT_DIR$/CGAntTasks.iws" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/data/fileForEditor.txt" afterPath="$PROJECT_DIR$/test/data/fileForEditor.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev/test_tasks.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev/test_antlib.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev/test_antlib.xml" afterPath="$PROJECT_DIR$/dev/test_antlib.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/cgtools/anttasks/ant/antlib.xml" afterPath="$PROJECT_DIR$/src/org/cgtools/anttasks/ant/antlib.xml" />
     </list>
   </component>
   <component name="ChangeListSynchronizer" />
@@ -184,7 +184,70 @@
       <file leaf-file-name="test_tasks.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dev/test_tasks.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="26" selection-start="841" selection-end="841" vertical-scroll-proportion="0.61130136">
+            <state line="15" column="24" selection-start="940" selection-end="940" vertical-scroll-proportion="0.51724136">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GrepTask.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/org/cgtools/anttasks/ant/GrepTask.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="13" selection-start="269" selection-end="269" vertical-scroll-proportion="0.03448276">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ReplaceTask.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/org/cgtools/anttasks/ant/ReplaceTask.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="8" column="13" selection-start="186" selection-end="186" vertical-scroll-proportion="0.03448276">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="fileForGrep.txt" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/data/fileForGrep.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="0" selection-start="56" selection-end="56" vertical-scroll-proportion="0.23425196">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FileChooserTask.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/org/cgtools/anttasks/ant/FileChooserTask.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="64" column="60" selection-start="1866" selection-end="1892" vertical-scroll-proportion="0.6551724">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="antlib.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/org/cgtools/anttasks/ant/antlib.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="25" selection-start="507" selection-end="507" vertical-scroll-proportion="0.2413793">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MultipleInputTask.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/org/cgtools/anttasks/ant/MultipleInputTask.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="124" column="22" selection-start="3328" selection-end="3328" vertical-scroll-proportion="0.44827586">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ListChooserTask.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/org/cgtools/anttasks/ant/ListChooserTask.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="13" selection-start="243" selection-end="243" vertical-scroll-proportion="0.13793103">
               <folding />
             </state>
           </provider>
@@ -193,7 +256,16 @@
       <file leaf-file-name="test_antlib.xml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/dev/test_antlib.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="54" selection-start="681" selection-end="681" vertical-scroll-proportion="0.51085144">
+            <state line="21" column="34" selection-start="809" selection-end="809" vertical-scroll-proportion="0.7241379">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ValidableInputTask.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/org/cgtools/anttasks/ant/ValidableInputTask.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="22" selection-start="287" selection-end="287" vertical-scroll-proportion="0.13793103">
               <folding />
             </state>
           </provider>
@@ -310,6 +382,80 @@
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
         </PATH_ELEMENT>
       </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="CGAntTasks.ipr" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="CGAntTasks" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:D:\ALU_SVN\CGTools_google\AntTasks" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:D:\ALU_SVN\CGTools_google\AntTasks\test" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:D:\ALU_SVN\CGTools_google\AntTasks\test\data" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="CGAntTasks.ipr" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="CGAntTasks" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:D:\ALU_SVN\CGTools_google\AntTasks" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:D:\ALU_SVN\CGTools_google\AntTasks\src" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:D:\ALU_SVN\CGTools_google\AntTasks\src\org" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:D:\ALU_SVN\CGTools_google\AntTasks\src\org\cgtools" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:D:\ALU_SVN\CGTools_google\AntTasks\src\org\cgtools\anttasks" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:D:\ALU_SVN\CGTools_google\AntTasks\src\org\cgtools\anttasks\ant" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="CGAntTasks.ipr" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="CGAntTasks" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:D:\ALU_SVN\CGTools_google\AntTasks" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:D:\ALU_SVN\CGTools_google\AntTasks\dev" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+      </PATH>
     </subPane>
   </component>
   <component name="ProjectReloadState">
@@ -323,7 +469,7 @@
       <showLibraryContents />
       <hideEmptyPackages ProjectPane="false" />
       <abbreviatePackageNames />
-      <showStructure Favorites="false" PackagesPane="false" Scope="false" ProjectPane="false" />
+      <showStructure Favorites="false" ProjectPane="false" Scope="false" PackagesPane="false" />
       <autoscrollToSource />
       <autoscrollFromSource />
       <sortByType />
@@ -352,6 +498,13 @@
   </component>
   <component name="RestoreUpdateTree" />
   <component name="RunManager">
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit" enabled="false" merge="false">
       <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -380,13 +533,6 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="ENABLE_SWING_INSPECTOR" value="false" />
       <module name="" />
-    </configuration>
-    <configuration default="true" type="Remote" factoryName="Remote">
-      <option name="USE_SOCKET_TRANSPORT" value="true" />
-      <option name="SERVER_MODE" value="false" />
-      <option name="SHMEM_ADDRESS" value="javadebug" />
-      <option name="HOST" value="localhost" />
-      <option name="PORT" value="5005" />
     </configuration>
     <configuration default="true" type="Applet" factoryName="Applet">
       <module name="" />
@@ -477,22 +623,22 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1280" height="996" extended-state="0" />
-    <editor active="false" />
+    <frame x="0" y="4" width="1280" height="996" extended-state="1" />
+    <editor active="true" />
     <layout>
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="3" />
       <window_info id="CVS" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="8" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="7" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23452769" order="0" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.34771988" order="0" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.36571428" order="1" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" order="1" />
-      <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.272" order="9" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33485714" order="9" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" order="5" />
       <window_info id="TestDox" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="3" />
       <window_info id="Module Dependencies" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="7" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="10" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="4" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1465798" order="1" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13843648" order="1" />
       <window_info id="TrackLink" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="5" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="11" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="2" />
@@ -644,16 +790,72 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/cgtools/anttasks/ant/GrepTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="13" selection-start="269" selection-end="269" vertical-scroll-proportion="0.03448276">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/cgtools/anttasks/ant/ReplaceTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="13" selection-start="186" selection-end="186" vertical-scroll-proportion="0.03448276">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/data/fileForGrep.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="0" selection-start="56" selection-end="56" vertical-scroll-proportion="0.23425196">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/cgtools/anttasks/ant/ListChooserTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="13" selection-start="243" selection-end="243" vertical-scroll-proportion="0.13793103">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/cgtools/anttasks/ant/ValidableInputTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="22" selection-start="287" selection-end="287" vertical-scroll-proportion="0.13793103">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/cgtools/anttasks/ant/FileChooserTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="64" column="60" selection-start="1866" selection-end="1892" vertical-scroll-proportion="0.6551724">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/cgtools/anttasks/ant/antlib.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="25" selection-start="507" selection-end="507" vertical-scroll-proportion="0.2413793">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/cgtools/anttasks/ant/MultipleInputTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="124" column="22" selection-start="3328" selection-end="3328" vertical-scroll-proportion="0.44827586">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/dev/test_tasks.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="26" selection-start="841" selection-end="841" vertical-scroll-proportion="0.61130136">
+        <state line="15" column="24" selection-start="940" selection-end="940" vertical-scroll-proportion="0.51724136">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dev/test_antlib.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="54" selection-start="681" selection-end="681" vertical-scroll-proportion="0.51085144">
+        <state line="21" column="34" selection-start="809" selection-end="809" vertical-scroll-proportion="0.7241379">
           <folding />
         </state>
       </provider>

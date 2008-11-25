@@ -6,10 +6,12 @@
 
   <target name="1. test MultipleInput">
     <cgtools:minput message="Enter the following values:" length="25">
-      <inputline label="Label A: " text="AAAAAAA" property="test.result.1"/>
-      <inputline label="Label B: " property="test.result.2"/>
-      <inputline label="" property="test.result.3"/>
-      <inputline label="Label...........................D: " property="test.result.4"/>
+      <inputtext label="Label A: " text="AAAAAAA" property="test.result.1"/>
+      <inputtext label="Label B: " property="test.result.2"/>
+      <inputtext label="" property="test.result.3"/>
+      <inputtext label="Label...........................D: " property="test.result.4"/>
+
+      <inputfile label="Choose file: " file="test/data/fileForEditor.txt" property="test.result.file"/>
     </cgtools:minput>
 
     <echo>
@@ -19,6 +21,8 @@
       ${test.result.2}
       ${test.result.3}
       ${test.result.4}
+
+      ${test.result.file}
     </echo>
   </target>
 
